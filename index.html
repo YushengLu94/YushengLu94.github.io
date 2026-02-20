@@ -72,6 +72,24 @@
       div.panel.show {
       display: block !important;
       }
+      details.paper-year { margin: 8px 0; }
+      details.paper-year summary {
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 110%;
+        list-style: none;
+        padding: 4px 0;
+      }
+      details.paper-year summary::-webkit-details-marker { display: none; }
+      details.paper-year summary::before {
+        content: "\25B6 ";
+        font-size: 90%;
+        color: #777;
+      }
+      details.paper-year[open] summary::before {
+        content: "\25BC ";
+      }
+      .year-papers { padding-left: 1em; margin-top: 4px; }
       .social-row {
         display: flex;
         flex-wrap: wrap;
@@ -83,9 +101,8 @@
     <div class="wrapper">
       <header>
         <h1>Yusheng Lu  卢渝生</h1>
-        <p>Ph.D. of Management Science and Engineering / Data Science<br>Tongji University / City University of Hong Kong</p>
-        <p>Research Laboratory<br><a href="https://aml-cityu.github.io/">AML</a></p>
-        <p>Email:<br>yushenglu3-c@my.cityu.edu.hk</p>
+        <p><a href="https://github.com/HiThink-Research/">HiThink Research</a></p>
+        <p>Email:<br>yushenglu3-c@my.cityu.edu.hk<br>luyusheng@myhexin.com</p>
     <h3><a href="https://yushenglu94.github.io/">Home</a></h3>
         <h3><a href="https://yushenglu94.github.io/research.html">Research</a></h3> 
     <b>Social</b><br>
@@ -111,20 +128,46 @@
     
     <h2><a id="published-papers-updated" class="anchor" href="#publications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Published &amp; Forthcoming Papers</h2>
     <hr>
+    <details class="paper-year" open>
+      <summary>2026</summary>
+      <div class="year-papers">
     <p style="margin:0"> <span style="margin:0; font-size:100%; font-weight:bold">CULTA: A Contrastive Unified-Level Trend-Aware Graph Architecture for Session-based Recommendation</span> <br> Dingchen Fan, Yusheng Lu, Yongrui Duan <br> <i>The Journal of Supercomputing</i>, 2026. <br> </p>
     <br>
+      </div>
+    </details>
+    <details class="paper-year">
+      <summary>2025</summary>
+      <div class="year-papers">
     <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://doi.org/10.1145/3746252.3761574">Prompt Tuning as User Inherent Profile Inference Machine</a> <br> with Zhaocheng Du, Xiangyang Li, Pengyue Jia, Yejing Wang, Weiwen Liu, Yichao Wang, Huifeng Guo, Ruiming Tang, Zhenhua Dong, Yongrui Duan, Xiangyu Zhao, <br> <i>CIKM '25: Proceedings of the 34th ACM International Conference on Information and Knowledge Management</i>, 2025, 5898 - 5906. <br>
     <br>
-    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://www.emerald.com/insight/content/doi/10.1108/ECAM-01-2021-0005/full/html">Bibliometric analysis and critical review of the research on big data in the construction industry</a> <br> with <a href="https://sem.tongji.edu.cn/semen/12005.html">Jiantong Zhang</a>, <br> <i>Engineering, Construction and Architectural Management</i>, 2022, 29(9): 3574-3592. <br>
-    <br>
-    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://link.springer.com/article/10.1007/s10844-022-00754-0">MhSa-GRU: combining user’s dynamic preferences and items’ correlation to augment sequence recommendation</a> <br> with <a href="https://sem.tongji.edu.cn/semen/12052.html">Yongrui Duan</a> and <a href="https://www.researchgate.net/profile/Liu-Peng-36">Peng Liu</a> <br> <i>Journal of Intelligent Information Systems</i>, 2023, 61: 225–248.  <br>
-    <br>
-    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://doi.org/10.1016/j.jretconser.2023.103582">Strategic live streaming choices for vertically differentiated products</a> <br> with <a href="https://sem.tongji.edu.cn/semen/12052.html">Yongrui Duan</a>, <br> <i>Journal of Retailing and Consumer Services</i>, 2023, 76(January 2024): 103582.  <br>
-    <br>
+      </div>
+    </details>
+    <details class="paper-year">
+      <summary>2024</summary>
+      <div class="year-papers">
     <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://doi.org/10.1007/s00521-024-09447-x">Online content-based sequential recommendation considering multimodal contrastive representation and dynamic preferences</a> <br> with <a href="https://sem.tongji.edu.cn/semen/12052.html">Yongrui Duan</a>, <br> <i>Neural Computing and Applications</i>, 2024, 36: 7085–7103.  <br>
     <br>
     <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="http://dx.doi.org/10.1007/s10844-024-00865-w">Improving graph collaborative filtering with view explorer for social recommendation</a> <br> with <a href="https://sem.tongji.edu.cn/semen/12052.html">Yongrui Duan</a> and <a>Yijun Tu</a> and <a>Xiaofeng Wang</a>, <br> <i>Journal of Intelligent Information Systems</i>, 2024, 62: 1703–1724.  <br>
     <br>
+      </div>
+    </details>
+    <details class="paper-year">
+      <summary>2023</summary>
+      <div class="year-papers">
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://link.springer.com/article/10.1007/s10844-022-00754-0">MhSa-GRU: combining user’s dynamic preferences and items’ correlation to augment sequence recommendation</a> <br> with <a href="https://sem.tongji.edu.cn/semen/12052.html">Yongrui Duan</a> and <a href="https://www.researchgate.net/profile/Liu-Peng-36">Peng Liu</a> <br> <i>Journal of Intelligent Information Systems</i>, 2023, 61: 225–248.  <br>
+    <br>
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://doi.org/10.1016/j.jretconser.2023.103582">Strategic live streaming choices for vertically differentiated products</a> <br> with <a href="https://sem.tongji.edu.cn/semen/12052.html">Yongrui Duan</a>, <br> <i>Journal of Retailing and Consumer Services</i>, 2023, 76(January 2024): 103582.  <br>
+    <br>
+      </div>
+    </details>
+    <details class="paper-year">
+      <summary>2022</summary>
+      <div class="year-papers">
+    <p style="margin:0"> <a style="margin:0; font-size:100%; font-weight:bold" href="https://www.emerald.com/insight/content/doi/10.1108/ECAM-01-2021-0005/full/html">Bibliometric analysis and critical review of the research on big data in the construction industry</a> <br> with <a href="https://sem.tongji.edu.cn/semen/12005.html">Jiantong Zhang</a>, <br> <i>Engineering, Construction and Architectural Management</i>, 2022, 29(9): 3574-3592. <br>
+    <br>
+      </div>
+    </details>
+    
     <hr>
         
       </section>
