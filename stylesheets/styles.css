@@ -111,6 +111,14 @@ header {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
+.profile-photo {
+  display:block;
+  width:180px;
+  height:auto;
+  margin:0 auto 18px;
+  border-radius:4px;
+}
+
 header ul {
   list-style:none;
   height:40px;
